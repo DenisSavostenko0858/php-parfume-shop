@@ -1,0 +1,218 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    /* font-family: ; */
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+    margin-top: -10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    border-radius: 35px 35px 0px 0px;  
+}
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text-footer{
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.container-link{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.logotip{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+.header-button{
+    list-style-type: none;
+}
+.head-btn{
+    text-decoration: none;
+    background-color: rgb(236, 236, 174);
+    color: rgb(134, 134, 134);
+    padding: 5px;
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+.head-btn:hover{
+    opacity: 70%;
+
+    transition: 0.2s;
+}
+.after-header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    width: 100%;
+    border-top: 2px solid white;
+    border-radius: 0 0 35px 35px;
+    z-index: 4;
+    opacity: 90%;
+}
+.after-header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 25px;
+}
+.header-text{
+    color: white;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+.header-text:hover{
+    opacity: 70%;
+}
+.after-header-image{
+    display: flex;
+    margin-bottom: 20px;
+}
+.header-image{
+    width: 450px;
+    border-radius: 15px;
+    margin: 10px;
+
+    transition: 0.3s;
+}
+.header-image:hover{
+    opacity: 70%;
+
+    transition: 0.3s;
+}
+.sub-color{
+    color: rgb(236, 236, 174);
+}
+.background-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+}
+.background-image-back{
+    width: 800px;
+    margin-top: -450px;
+}
+.bacground-text{
+    font-size: 64px;
+    margin-top: -550px;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+.container-body-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.content-from-database{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(114, 112, 112);
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 50px 100px 50px 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: rgb(134, 134, 134);
+}
+.addition-form{
+    color: white;
+    font-size: 18px;
+}
+.input{
+    background-color: rgb(114, 112, 112);
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+.input:hover{
+    opacity: 70%;
+
+    transition: 0.3s;
+}
+.input-form{
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.btn-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(114, 112, 112);
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 35px;
+
+    transition: 0.2s;
+}
+.btn-form:hover{
+    opacity: 70%;
+
+    transition: 0.2s;
+}
+.main-addition-form{
+    font-size: 16px;
+    color: white;
+}
