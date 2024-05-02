@@ -13,10 +13,11 @@
         session_start();
                 if (isset($_SESSION['productName'])) {
                     $name = $_SESSION['productName'];
+                    $username = $_SESSION['userName'];
                     $description = $_SESSION['productDescription'];
                     $additional = $_SESSION['productAdditional']; 
                     $price = $_SESSION['productPrice'];
-                    echo "<form action='' method=''>";
+                    echo "<form action='../controllers/modaltocart.php' method='post'>";
                     echo "<div class='container-modal'>";
                     echo "<div class='container-modal-left'>";
                     echo "<img class='card-photo-modal' src='../public/images/haeder-image.png' alt='бутылка('>";
@@ -26,7 +27,13 @@
                     echo "<h2 class='modal-text'>" . htmlspecialchars($name) . "</h2>";
                     echo "<h3 class='modal-text'>" . htmlspecialchars($description) . "</h3>";
                     echo "<h3 class='modal-text'>" . htmlspecialchars($additional) . "</h3>";
-                    echo "<h3 class='modal-text'>" . htmlspecialchars($price) . "</h3>";
+                    echo "<h3 class='modal-text'>Обьем: 100мл</h3>";
+                    echo "<h3 class='modal-text'>" .'Цена: '. htmlspecialchars($price) . "</h3>";
+                    echo "<input type='hidden' name='username' value='$username'>";
+                    echo "<input type='hidden' name='title' value='$description'>";
+                    echo "<input type='hidden' name='additional' value='$additional'>";
+                    echo "<input type='hidden' name='price' value='$price'>";
+                    echo "<input type='hidden' name='product_name' value='$name'>";
                     echo "<button type='submit' class='bybutton'>Купить</button>";
                     echo "</div>";
                     echo "</div>";
@@ -34,5 +41,6 @@
                 }
     ?>
     </div>
+    <?php include'partials/bottom.php' ?>
 </body>
 </html>

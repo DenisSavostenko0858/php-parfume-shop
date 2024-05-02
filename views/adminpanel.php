@@ -35,6 +35,12 @@
     </div>
     <div class="container-body-form-products">
         <div class="form-content">
+            <h3>Заявки на покупку</h3>
+                <?php include'../controllers/cartlistall.php' ?>
+        </div>
+    </div>
+    <div class="container-body-form-products">
+        <div class="form-content">
             <h3>Продукция</h3>
                 <?php include'../controllers/productlist.php' ?>
         </div>

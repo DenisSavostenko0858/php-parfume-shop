@@ -8,7 +8,7 @@ if (isset($_SESSION['userName']) && isset($_SESSION['userEmail'])) { ?>
             <ul class="container-link">
                 <li class="header-button"><a class="head-btn" href="/">Главная</a></li>
                 <li class="header-button"><a class="head-btn" href="">Где найти</a></li>
-                <li class="header-button"><a class="head-btn" href="">   
+                <li class="header-button"><a class="head-btn" href="../views/profilePage.php">   
                     <?php
                     session_start();
                     if (isset($_SESSION['userName'])) {
@@ -27,8 +27,8 @@ if (isset($_SESSION['userName']) && isset($_SESSION['userEmail'])) { ?>
         <div class="container-header-button">
             <ul class="container-link">
                 <li class="header-button"><a class="head-btn" href="/">Главная</a></li>
-                <li class="header-button"><a class="head-btn" href="./views/registerForm.php">Регистрация</a></li>
-                <li class="header-button"><a class="head-btn" href="./views/loginForm.php">Войти</a></li>
+                <li class="header-button"><a class="head-btn" href="../views/registerForm.php">Регистрация</a></li>
+                <li class="header-button"><a class="head-btn" href="../views/loginForm.php">Войти</a></li>
                 <li class="header-button"><a class="head-btn" href="">Где найти</a></li>
             </ul>
         </div>
