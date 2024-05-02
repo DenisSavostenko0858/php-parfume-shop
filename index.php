@@ -31,9 +31,8 @@
             <div class="container-body-main">
                 <h3>Здравствуйте admin</h3>
                 <li class="header-button"><a class="sub-color" href="/views/adminpanel.php">Перейдите в панель администратора</a></li> 
-            </div>
+            </div>        
         <?php } ?>
-    <div class="container-body-main">
         <h3>Пафрюмы личного использования</h3>
         <div class="content-from-database">
             <div>Парфюм1</div>
