@@ -159,6 +159,65 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgb(114, 112, 112);
+    padding: 10px;
+    border-radius: 15px;
+}
+.product-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(134, 134, 134);
+    width: 400px;
+    margin: 10px;
+   
+    border-radius: 15px;
+}
+.btn-form-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(114, 112, 112);
+    padding: 10px;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.btn-form-about:hover{
+    background-color: rgb(171, 175, 133);
+
+    transition: 0.3s;
+}
+.card-photo{
+    width: 300px;
+
+    transition: 0.3s;
+}
+.card-photo:hover{
+    opacity: 70%;
+
+    transition: 0.3s;
+}
+.card-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 360px;
+    border-radius: 15px;
+    background-color: rgb(172, 171, 171);
+}
+.form-product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .container-form{
     display: flex;
@@ -299,4 +358,7 @@ body{
     padding: 5px;
     width: 120px;
     border-radius: 10px;
+}
+.modal{
+    display: none;
 }
