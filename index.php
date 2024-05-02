@@ -34,11 +34,22 @@
             </div>        
         <?php } ?>
         <h3>Пафрюмы личного использования</h3>
-        <div class="content-from-database">
-            <div>Парфюм1</div>
-            <div>Парфюм2</div>
-            <div>Парфюм3</div>
-        </div>
+        <?php
+            $db = new SQLite3('database/database.db');
+            $stmt = $db->query('SELECT * FROM Products');
+
+            while ($row = $stmt->fetchArray()) {
+                echo "<div class='product-card'>";
+                echo "<form action='deleteproduct.php' method='post'>";
+                echo "<input type='hidden' name='delete_id' value='" . $row['id'] . "'>";
+                echo "<h3 class='product-name'>Name: " . $row['name'] . "</h3>";
+                echo "<p class='product-price'>Price: " . $row['price'] . "</p>";
+                echo "<button type='submit' class='btn-form-dell'>Подробнее</button>";
+                echo "</form>";
+                echo "</div>";
+            }
+            $db->close();
+        ?>
         <h3>Свечи</h3>
         <div class="content-from-database">
             <div>Свеча1</div>
