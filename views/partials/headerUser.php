@@ -8,7 +8,15 @@ if (isset($_SESSION['userName']) && isset($_SESSION['userEmail'])) { ?>
             <ul class="container-link">
                 <li class="header-button"><a class="head-btn" href="/">Главная</a></li>
                 <li class="header-button"><a class="head-btn" href="">Где найти</a></li>
-                <li class="header-button"><a class="head-btn" href="">Профиль</a></li>
+                <li class="header-button"><a class="head-btn" href="">   
+                    <?php
+                    session_start();
+                    if (isset($_SESSION['userName'])) {
+                        $name = $_SESSION['userName'];
+                        echo "<p>" . htmlspecialchars($name) . "</p>";
+                    }
+                    ?>
+                    </a></li>
                 <li class="header-button"><a class="head-btn" href="../../controllers/logout.php">Выйти</a></li>
             </ul>
         </div>

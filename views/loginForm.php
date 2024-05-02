@@ -15,7 +15,7 @@
                 <p class="main-addition-form">Введите данные что использовали</p>
                 <p class="main-addition-form">при регистрации</p>
                 <p class="main-addition-form">Если вы еще не зарегистрированы,</p>
-                <p class="main-addition-form">перейдите на страницу <span class="sub-color"><a href="./registerForm.php">регистрации</a></span></p>
+                <p class="main-addition-form">перейдите на страницу <span class="sub-color"><a class="sub-color" href="./registerForm.php">регистрации</a></span></p>
             </div>
             <div class="input">
                 <p class="addition-form">Почта:</p>

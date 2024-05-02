@@ -59,12 +59,18 @@ body{
 }
 .head-btn{
     text-decoration: none;
-    background-color: rgb(236, 236, 174);
-    color: rgb(134, 134, 134);
-    padding: 5px;
+    background-color:  #F7CBCA;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
     border-radius: 5px;
-
+    font-weight: bold;
     transition: 0.2s;
+
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .head-btn:hover{
     opacity: 70%;
@@ -114,7 +120,8 @@ body{
     transition: 0.3s;
 }
 .sub-color{
-    color: rgb(236, 236, 174);
+    color: #F7CBCA;
+    text-decoration: none;
 }
 .background-image{
     display: flex;
@@ -215,4 +222,81 @@ body{
 .main-addition-form{
     font-size: 16px;
     color: white;
+}
+.white{
+    color: white;
+}
+.container-link{
+    width: 400px;
+}
+.container-body-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: rgb(134, 134, 134); 
+}
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(175, 172, 172); 
+    border-radius: 15px;
+    padding: 10px;
+}
+.products-row{
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    border-radius: 15px; 
+    margin-bottom: 10px;
+    width: 1000px;
+}
+.btn-form-dell{
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+}
+.btn-form-dell:hover{
+    opacity: 50%;
+}
+.container-body-form-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(134, 134, 134); 
+}
+.product-name{
+    background-color: rgb(175, 172, 172);
+    width: 500px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.product-descriptional{
+    background-color: rgb(175, 172, 172);
+    padding: 5px;
+    border-radius: 10px;
+}
+.product-additional{
+    background-color: rgb(175, 172, 172);
+    padding: 5px;
+    border-radius: 10px;
+}
+.product-price{
+    background-color: rgb(175, 172, 172);
+    padding: 5px;
+    width: 120px;
+    border-radius: 10px;
 }

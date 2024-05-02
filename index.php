@@ -22,10 +22,17 @@
     </div>
     <div class="background-image">
             <img class="background-image-back" src="./public/images/background.png" alt="фон">
-        </div>
-        <div class="main-content">
-            <h3 class="bacground-text">Molecule-parfume</h3>
-        </div>
+    </div>
+    <div class="main-content">
+            <h3 class="bacground-text">Molecule <span class="white">----</span> parfume</h3>
+    </div>
+    <div class="container-body-main">
+        <?php if (isset($_SESSION['userRole']) && $_SESSION['userRole'] === 'true') { ?>
+            <div class="container-body-main">
+                <h3>Здравствуйте admin</h3>
+                <li class="header-button"><a class="sub-color" href="/views/adminpanel.php">Перейдите в панель администратора</a></li> 
+            </div>
+        <?php } ?>
     <div class="container-body-main">
         <h3>Пафрюмы личного использования</h3>
         <div class="content-from-database">

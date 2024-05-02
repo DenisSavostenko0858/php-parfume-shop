@@ -18,13 +18,14 @@ if (isset($_POST['email'], $_POST['password'])) {
         if ($user && password_verify($password, $user['password'])) {
             $_SESSION['userName'] = $user['name'];
             $_SESSION['userEmail'] = $user['email'];
+            $_SESSION['userRole'] = $user['role'];
         
             echo "Вы успешно авторизованы!";
 
             header("Location: ../index.php");
-        exit();
+            exit();
         } else {
-            echo "<div>Не правильный пароль или логин <a href='../views/loginForm.php'>попробуйте еще раз</a></div>";
+            echo "<div>Неправильный пароль или логин <a href='../views/loginForm.php'>попробуйте еще раз</a></div>";
         }
     }
 } else {
