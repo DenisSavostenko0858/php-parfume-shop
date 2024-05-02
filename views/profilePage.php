@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
-    <?php include'./partials/headerUser.php' ?>
+    <?php include'./partials/headerUser.php' ?>    
     <div class="content-cart">
         <h2>Корзина</h2>
         <div class="content-cart-db">

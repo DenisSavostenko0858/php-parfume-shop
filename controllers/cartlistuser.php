@@ -6,7 +6,7 @@
   
   while ($row = $stmt->fetchArray()) {
       echo "<div class='products-row'>";
-      echo "<form action='../controllers/' method='get'>";
+      echo "<form action='../controllers/deletecartuser.php' method='get'>";
       echo "<input type='hidden' name='delete_id' value= " .$row['id']." >";
       echo "<p>ID: " . $row['id'] . "</p>";
       echo "<h3 class='product-name'>Парфюм: " . $row['product_name'] . "</h3>";
