@@ -41,20 +41,23 @@
 
             while ($row = $stmt->fetchArray()) {
                 echo "<div class='product-card'>";
-                echo "<form action='' method='' class='form-product-card'>";
+                echo "<form action='../controllers/modalwindow.php' method='post' class='form-product-card'>";
                 echo "<input type='hidden' name='delete_id' value='" . $row['id'] . "'>";
                 echo "<img class='card-photo' src='./public/images/haeder-image.png' alt='бутылка('>";
                 echo "<div class='card-about'>";
                 echo "<h3 class='product-name-card'>" . $row['name'] . "</h3>";
                 echo "<p class='product-price-card'>Цена: " . $row['price'] . "</p>";
-                echo "<button type='button' class='btn-form-about' data-id='" . $row['id'] . "'>Подробнее</button>";
+                echo "<input type='hidden' name='name' value='". $row['name'] ."'>";
+                echo "<input type='hidden' name='description' value='". $row['description'] ."'>";
+                echo "<input type='hidden' name='additional' value='". $row['additional'] ."'>";
+                echo "<input type='hidden' name='price' value='". $row['price'] ."'>";
+                echo "<button type='submit' class='btn-form-about' data-id='" . $row['id'] . "'>Подробнее</button>";
                 echo "</div>";
                 echo "</form>";
                 echo "</div>";
             }
             $db->close();
         ?>
-
         </div>
             <h3>Свечи</h3>
         <div class="content-from-database">
@@ -69,51 +72,6 @@
             <div>Диффузор3</div>
         </div>
     </div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <button class="close">Закрыть</button>
-            <form action="../modules/add_to_cart.php" method="post" class="formparfume">
-                <div><img src="../public/images/1.png" class="modal-img"></div>
-                <div class="modal-content-text">
-                <h2 id="modal-title">Заголовок модального окна</h2>
-                <input type="hidden" name="title" id="modal-title">
-                <p id="modal-description">Содержимое модального окна</p>
-                <p id="modal-additional">Содержимое модального окна</p>
-                <p id="modal-price">Содержимое модального окна</p>
-                <input type="hidden" name="price" id="modal-price">
-                <input type="submit" id="buyButton" data-title.value data-price="персик" class="card-button" value="Купить">
-            </div>
-            </form>
-        </div>
-    </div>
     <?php include'views/partials/bottom.php' ?>
-    <script>
-        var modal = document.getElementById('modal');
-        var buttons = document.getElementsByClassName('btn-form-about');
-        var close = document.getElementsByClassName('close')[0];
-        var title = document.getElementById('modal-title');
-        var description = document.getElementById('modal-description');
-        var price = document.getElementById('modal-price');
-        var additional = document.getElementById('modal-additional');
-
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function() {
-            modal.style.display = 'block';
-            title.innerText = this.getAttribute('data-title');
-            description.innerText = this.getAttribute('data-description');
-            price.innerText = this.getAttribute('data-price');
-            additional.innerText = this.getAttribute('data-additional');
-
-            var titleValue = this.getAttribute('data-title');
-            var descriptionValue = this.getAttribute('data-description');
-            var priceValue = this.getAttribute('data-price');
-            var additionalValue = this.getAttribute('data-additional');
-        });
-    }
-
-    close.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-    </script>
 </body>
 </html>

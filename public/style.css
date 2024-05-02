@@ -359,6 +359,80 @@ body{
     width: 120px;
     border-radius: 10px;
 }
-.modal{
-    display: none;
+.card-photo-modal{
+    width: 400px;
+}
+.container-modal{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(175, 172, 172);
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+}
+.container-modal-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-modal-left:hover{
+    opacity: 70%;
+}
+.container-modal-right{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 15%;
+}
+.bybutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(134, 134, 134); 
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.bybutton:hover{
+    background-color: rgb(192, 197, 144);
+    opacity: 70%;
+    transition: 0.3s;
+}
+.button-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(134, 134, 134);
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px; 
+
+    transition: 0.3s;
+}
+.button-close:hover{
+    background-color: red;
+
+    transition: 0.3s;
+}
+.modal-text{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(126, 124, 124);
+}
+.modal-text:hover{
+    opacity: 70%
 }
