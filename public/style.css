@@ -214,9 +214,13 @@ h3{
 .content-from-database{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(114, 112, 112);
     padding: 10px;
     border-radius: 15px;
+    width: 1450px;
 }
 .product-card{
     display: flex;

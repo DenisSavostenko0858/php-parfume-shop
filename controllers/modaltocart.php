@@ -19,7 +19,7 @@ if (isset($_POST['username'], $_POST['userphone'], $_POST['useremail'], $_POST['
     if ($existing_user) {
         echo "Парфюм уже добавлен, <a href='/'>вернитесь на главную.</a>";
     } else {
-        $query = "INSERT INTO Carts (username, userphone, useremail, title, additional, price, product_name) VALUES (:username, :userphone, :useremail, :title, :additional, :price, :product_name)";
+        $query = "INSERT INTO Carts (username, userphone, usermail, title, additional, price, product_name) VALUES (:username, :userphone, :useremail, :title, :additional, :price, :product_name)";
         $stmt = $db->prepare($query);
         $stmt->bindValue(':username', $username, SQLITE3_TEXT);
         $stmt->bindValue(':userphone', $userphone, SQLITE3_TEXT);
