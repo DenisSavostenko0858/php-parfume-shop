@@ -30,7 +30,7 @@
         <?php if (isset($_SESSION['userRole']) && $_SESSION['userRole'] === 'true') { ?>
             <div class="container-body-main">
                 <h3>Здравствуйте admin</h3>
-                <li class="header-button"><a class="sub-color" href="/views/adminpanel.php">Перейдите в панель администратора</a></li> 
+                <li class="header-button"><a class="admin-button" href="/views/adminpanel.php">Перейдите в панель администратора</a></li> 
             </div>        
         <?php } ?>
         <h2>Пафрюмы личного использования</h2>
@@ -58,18 +58,6 @@
             }
             $db->close();
         ?>
-        </div>
-            <h3>Свечи</h3>
-        <div class="content-from-database">
-            <div>Свеча1</div>
-            <div>Свеча2</div>
-            <div>Свеча3</div>
-        </div>
-        <h3>Аромадиффузоры</h3>
-        <div class="content-from-database">
-            <div>Диффузор1</div>
-            <div>Диффузор2</div>
-            <div>Диффузор3</div>
         </div>
     </div>
     <?php include'views/partials/bottom.php' ?>

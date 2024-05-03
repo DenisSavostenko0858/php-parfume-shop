@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include'partials/headerGuest.php' ?>
-    <div class="after-header"><div class="logotip">Войти</div></div>
+    <div class="after-header"><div class="logotip">Login</div></div>
     <div class="container-form">
         <form action="../controllers/login.php" method="post" class="form-content">
             <div class="input">

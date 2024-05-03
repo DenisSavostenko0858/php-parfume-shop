@@ -1,10 +1,29 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../public/fonts/Poppins/Poppins-Regular.ttf) format("truetype"); 
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url(../public/fonts/Poppins/Poppins-Medium.ttf) format("truetype"); 
+}
 body{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    /* font-family: ; */
+    font-family: 'Poppins';
+}
+p{
+    font-family: 'Poppins';
+}
+h1{
+    font-family: 'Poppins';
+}
+h2{
+    font-family: 'Poppins';
+}
+h3{
+    font-family: 'Poppins-medium';
 }
 .container-header{
     display: flex;
@@ -15,6 +34,35 @@ body{
     width: 100%;
     margin: 0px;
     margin-top: -10px;
+    z-index: 3;
+}
+.container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    border-radius: 15px;
+    width:1000px;
+}
+.container-content-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.container-content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-content-image{
+    width: 400px;
+}
+.container-content-image-medium{
+    width: 300px;
 }
 .footer{
     display: flex;
@@ -129,6 +177,14 @@ body{
     align-items: center;
     z-index: 2;
     flex-direction: column;
+}
+.background-image-othet-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    margin-top: 100px;
 }
 .background-image-back{
     width: 800px;
@@ -436,4 +492,34 @@ body{
 }
 .modal-text:hover{
     opacity: 70%
+}
+.content-cart{
+    background-color: rgb(175, 172, 172);
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.message-profile{
+    background-color: rgb(126, 124, 124);
+    border-radius: 10px;
+    padding: 5px;
+    width: 500px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.admin-button{
+    background-color: rgb(175, 172, 172);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 400px;
+    font-family: 'Poppins-medium';
+
+    transition: 0.2s;
+}
+.admin-button:hover{
+    background-color: red;
+    transition: 0.2s;
 }

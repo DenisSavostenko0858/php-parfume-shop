@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include'./partials/headerUser.php' ?>
-    <h2>Панель администратора</h2>
+    <div class="after-header"><div class="logotip">Admin Panel</div></div>
     <div class="container-body-form">
         <div class="form-content">
             <h3>Добавление продукции</h3>
