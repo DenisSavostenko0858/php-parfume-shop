@@ -14,6 +14,8 @@
                 if (isset($_SESSION['productName'])) {
                     $name = $_SESSION['productName'];
                     $username = $_SESSION['userName'];
+                    $userphone = $_SESSION['userPhone'];
+                    $useremail = $_SESSION['userEmail'];
                     $description = $_SESSION['productDescription'];
                     $additional = $_SESSION['productAdditional']; 
                     $price = $_SESSION['productPrice'];
@@ -30,6 +32,8 @@
                     echo "<h3 class='modal-text'>Обьем: 100мл</h3>";
                     echo "<h3 class='modal-text'>" .'Цена: '. htmlspecialchars($price) . "</h3>";
                     echo "<input type='hidden' name='username' value='$username'>";
+                    echo "<input type='hidden' name='userphone' value='$userphone'>";
+                    echo "<input type='hidden' name='useremail' value='$useremail'>";
                     echo "<input type='hidden' name='title' value='$description'>";
                     echo "<input type='hidden' name='additional' value='$additional'>";
                     echo "<input type='hidden' name='price' value='$price'>";

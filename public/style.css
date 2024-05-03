@@ -325,7 +325,6 @@ h3{
     color: white;
     width: 200px;
     margin-top: 50px;
-    margin-left: 35px;
 
     transition: 0.2s;
 }
@@ -333,6 +332,12 @@ h3{
     opacity: 70%;
 
     transition: 0.2s;
+}
+.form-panel-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .main-addition-form{
     font-size: 16px;

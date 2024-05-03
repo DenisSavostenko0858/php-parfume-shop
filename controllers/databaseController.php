@@ -9,6 +9,7 @@ $db->exec('CREATE TABLE IF NOT EXISTS Users (
     name TEXT,
     surname TEXT,
     email TEXT,
+    telephone TEXT,
     password TEXT
 )');
 
@@ -25,6 +26,8 @@ $db->exec('CREATE TABLE IF NOT EXISTS Products (
 $db->exec('CREATE TABLE IF NOT EXISTS Carts (
     id INTEGER PRIMARY KEY,
     username TEXT,
+    userphone TEXT,
+    usermail TEXT,
     title TEXT,
     additional TEXT,
     price TEXT,

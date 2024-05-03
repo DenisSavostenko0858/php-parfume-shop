@@ -9,7 +9,8 @@
       echo "<input type='hidden' name='delete_id' value= " .$row['id']." >";
       echo "<p>ID: " . $row['id'] . "</p>";
       echo "<p>Имя: " . $row['username'] . "</p>";
-      echo "<p>Почта:</p>";
+      echo "<p>Телефон: " . $row['userphone'] . "</p>";
+      echo "<p>Почты: " . $row['usermail'] . "</p>";
       echo "<h3 class='product-name'>Парфюм: " . $row['product_name'] . "</h3>";
       echo "<p class='product-descriptional'>Описание: " . $row['title'] . "</p>";
       echo "<p class='product-additional'>Ноты: " . $row['additional'] . "</p>";

@@ -12,7 +12,7 @@
     <div class="container-body-form">
         <div class="form-content">
             <h3>Добавление продукции</h3>
-            <form action="../controllers/admincontroler.php" method="post">
+            <form action="../controllers/admincontroler.php" method="post" class="form-panel-admin">
             <div class="input">
                 <p class="addition-form">Имя продукта:</p>
                 <input type="text" class="input-form" name="name" placeholder="Parfume">

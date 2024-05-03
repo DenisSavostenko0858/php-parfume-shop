@@ -19,6 +19,7 @@ if (isset($_POST['email'], $_POST['password'])) {
             $_SESSION['userName'] = $user['name'];
             $_SESSION['userEmail'] = $user['email'];
             $_SESSION['userRole'] = $user['role'];
+            $_SESSION['userPhone'] = $user['telephone'];
         
             echo "Вы успешно авторизованы!";
 

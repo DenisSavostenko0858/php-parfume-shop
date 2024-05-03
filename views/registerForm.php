@@ -25,6 +25,10 @@
                 <input type="email" class="input-form" name="email" placeholder="Иван@mail.com">
             </div>
             <div class="input">
+                <p class="addition-form">Телефон:</p>
+                <input type="tel" class="input-form" name="telephone" placeholder="+7 999 999 99 99">
+            </div>
+            <div class="input">
                 <p class="addition-form">Пароль:</p>
                 <input type="password" class="input-form" name="password" placeholder="Ivan123">
             </div>

@@ -28,6 +28,13 @@
             <button type="submit" class="btn-form">Войти</button>
         </form>
     </div>
+    <div class="container-form">
+    <div class="input">
+                <p class="main-addition-form">Данные пользователя Admin</p>
+                <p class="main-addition-form">email: admin@root</p>
+                <p class="main-addition-form">password: admin</p>
+            </div> 
+    </div>
     <?php include'partials/bottom.php' ?>
 </body>
 </html>

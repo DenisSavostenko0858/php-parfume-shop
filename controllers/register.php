@@ -2,11 +2,12 @@
 <?php
 $db = new SQLite3('../database/database.db');
 
-if (isset($_POST['role'], $_POST['name'], $_POST['surname'], $_POST['email'], $_POST['password'])) {
+if (isset($_POST['role'], $_POST['name'], $_POST['surname'], $_POST['email'], $_POST['telephone'], $_POST['password'])) {
     $role = $_POST['role'];
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
     $password = $_POST['password'];
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
@@ -18,12 +19,13 @@ if (isset($_POST['role'], $_POST['name'], $_POST['surname'], $_POST['email'], $_
     if ($existing_user) {
         echo "Пользователь с таким email уже зарегистрирован, <a href='../views/loginForm.php'>попробуйте войти.</a>";
     } else {
-        $query = "INSERT INTO Users (role, name, surname, email, password) VALUES (:role, :name, :surname, :email, :password)";
+        $query = "INSERT INTO Users (role, name, surname, email, telephone, password) VALUES (:role, :name, :surname, :email, :telephone, :password)";
         $stmt = $db->prepare($query);
         $stmt->bindValue(':role', $role, SQLITE3_TEXT);
         $stmt->bindValue(':name', $name, SQLITE3_TEXT);
         $stmt->bindValue(':surname', $surname, SQLITE3_TEXT);
         $stmt->bindValue(':email', $email, SQLITE3_TEXT);
+        $stmt->bindValue(':telephone', $telephone, SQLITE3_TEXT);
         $stmt->bindValue(':password', $hashedPassword, SQLITE3_TEXT);
 
         $result = $stmt->execute();
@@ -34,6 +36,7 @@ if (isset($_POST['role'], $_POST['name'], $_POST['surname'], $_POST['email'], $_
             $_SESSION['userName'] = $_POST['name'];
             $_SESSION['userEmail'] = $_POST['email'];
             $_SESSION['userRole'] = $_POST['role'];
+            $_SESSION['userPhone'] = $user['telephone'];
 
             header("Location: ../index.php");
             exit();

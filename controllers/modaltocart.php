@@ -2,8 +2,10 @@
 <?php
 $db = new SQLite3('../database/database.db');
 
-if (isset($_POST['username'], $_POST['title'], $_POST['additional'], $_POST['price'], $_POST['product_name'])) {
+if (isset($_POST['username'], $_POST['userphone'], $_POST['useremail'], $_POST['title'], $_POST['additional'], $_POST['price'], $_POST['product_name'])) {
     $username = $_POST['username'];
+    $userphone = $_POST['userphone'];
+    $useremail = $_POST['useremail'];
     $title = $_POST['title'];
     $additional = $_POST['additional'];
     $price = $_POST['price'];
@@ -17,9 +19,11 @@ if (isset($_POST['username'], $_POST['title'], $_POST['additional'], $_POST['pri
     if ($existing_user) {
         echo "Парфюм уже добавлен, <a href='/'>вернитесь на главную.</a>";
     } else {
-        $query = "INSERT INTO Carts (username, title, additional, price, product_name) VALUES (:username, :title, :additional, :price, :product_name)";
+        $query = "INSERT INTO Carts (username, userphone, useremail, title, additional, price, product_name) VALUES (:username, :userphone, :useremail, :title, :additional, :price, :product_name)";
         $stmt = $db->prepare($query);
         $stmt->bindValue(':username', $username, SQLITE3_TEXT);
+        $stmt->bindValue(':userphone', $userphone, SQLITE3_TEXT);
+        $stmt->bindValue(':useremail', $useremail, SQLITE3_TEXT);
         $stmt->bindValue(':title',  $title, SQLITE3_TEXT);
         $stmt->bindValue(':additional', $additional, SQLITE3_TEXT);
         $stmt->bindValue(':price', $price, SQLITE3_TEXT);
