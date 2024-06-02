@@ -6,24 +6,37 @@
     font-family: 'Poppins-medium';
     src: url(../public/fonts/Poppins/Poppins-Medium.ttf) format("truetype"); 
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../public/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype"); 
+}
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url(../public/fonts/Montserrat/Montserrat-Medium.ttf) format("truetype"); 
+}
 body{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Montserrat';
 }
 p{
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Montserrat';
 }
 h1{
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Montserrat';
 }
 h2{
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Montserrat';
 }
 h3{
-    font-family: 'Poppins-medium';
+    /* font-family: 'Poppins-medium'; */
+    font-family: 'Montserrat-medium';
 }
 .container-header{
     display: flex;
@@ -220,7 +233,7 @@ h3{
     background-color: rgb(114, 112, 112);
     padding: 10px;
     border-radius: 15px;
-    width: 1450px;
+    width: auto;
 }
 .product-card{
     display: flex;

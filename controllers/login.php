@@ -26,7 +26,7 @@ if (isset($_POST['email'], $_POST['password'])) {
             header("Location: ../index.php");
             exit();
         } else {
-            echo "<div>Неправильный пароль или логин <a href='../views/loginForm.php'>попробуйте еще раз</a></div>";
+            echo "<div style='display:flex; align-items:center; justify-content: center; flex-direction: column; font-size: 20px; margin-top: 100px'>Неправильный пароль или логин <a href='../views/loginForm.php'>попробуйте еще раз</a></div>";
         }
     }
 } else {
