@@ -10,13 +10,13 @@ if (isset($_SESSION['userName']) && isset($_SESSION['userEmail'])) { ?>
                 <li class="header-button"><a class="head-btn" href="../views/findPage.php">О нас</a></li>
                 <li class="header-button"><a class="head-btn" href="../views/profilePage.php">   
                     <?php
-                    session_start();
                     if (isset($_SESSION['userName'])) {
                         $name = $_SESSION['userName'];
                         echo "<p>" . htmlspecialchars($name) . "</p>";
                     }
                     ?>
-                    </a></li>
+                    </a>
+                </li>
                 <li class="header-button"><a class="head-btn" href="../../controllers/logout.php">Выйти</a></li>
             </ul>
         </div>

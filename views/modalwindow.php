@@ -10,7 +10,7 @@
 <?php include'partials/headerUser.php' ?>
     <div class="modal-body">
     <?php
-        session_start();
+    if (isset($_SESSION['userName']) && isset($_SESSION['userEmail'])) {
                 if (isset($_SESSION['productName'])) {
                     $name = $_SESSION['productName'];
                     $username = $_SESSION['userName'];
@@ -43,6 +43,30 @@
                     echo "</div>";
                     echo "</form>";
                 }
+            } else {
+                if (isset($_SESSION['productName'])) {
+                    $name = $_SESSION['productName'];
+                    $description = $_SESSION['productDescription'];
+                    $additional = $_SESSION['productAdditional']; 
+                    $price = $_SESSION['productPrice'];
+                    echo "<form action='../controllers/modaltocart.php' method='post'>";
+                    echo "<div class='container-modal'>";
+                    echo "<div class='container-modal-left'>";
+                    echo "<img class='card-photo-modal' src='../public/images/haeder-image.png' alt='бутылка('>";
+                    echo "</div>";
+                    echo "<div class='container-modal-right'>";
+                    echo "<a href='/' class='button-close'>Закрыть</a>";
+                    echo "<h2 class='modal-text'>" . htmlspecialchars($name) . "</h2>";
+                    echo "<h3 class='modal-text'>" . htmlspecialchars($description) . "</h3>";
+                    echo "<h3 class='modal-text'>" . htmlspecialchars($additional) . "</h3>";
+                    echo "<h3 class='modal-text'>Обьем: 100мл</h3>";
+                    echo "<h3 class='modal-text'>" .'Цена: '. htmlspecialchars($price) . "</h3>";
+                    echo "<a type='submit' class='bybutton' href='loginForm.php'>Войти</a>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</form>";
+                }
+            }
     ?>
     </div>
     <?php include'partials/bottom.php' ?>

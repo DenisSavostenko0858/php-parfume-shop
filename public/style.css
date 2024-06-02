@@ -469,6 +469,7 @@ h3{
     font-size: 18px;
     font-weight: bold;
     color: white;
+    text-decoration: none;
 }
 .bybutton:hover{
     background-color: rgb(192, 197, 144);
