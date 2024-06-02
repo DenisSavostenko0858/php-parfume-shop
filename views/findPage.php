@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include'partials/headerUser.php' ?>
-    <div class="after-header"><div class="logotip">About us</div></div>
+    <div class="after-header"><div class="logotip">О нас</div></div>
     <div class="background-image-othet-page">
             <img class="background-image-back" src="../public/images/background.png" alt="фон">
     </div>

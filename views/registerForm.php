@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include'partials/headerGuest.php' ?>
-    <div class="after-header"><div class="logotip">Registration</div></div>
+    <div class="after-header"><div class="logotip">Регистрация</div></div>
     <div class="container-form">
         <form action="../controllers/register.php" method="post" class="form-content">
             <input type="hidden" name="role" value="false">
