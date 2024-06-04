@@ -69,3 +69,120 @@
         width: auto;
     }
 }
+@media(max-width: 398px) {
+   .content-from-database{
+        width: 300px;
+   }
+   .product-card{
+        width: 280px;
+   }
+   .card-about{
+        width: 240px;
+   }
+   .card-photo{
+        width: 240px;
+   }
+    .after-header-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-image{
+        width: 300px;
+    }
+    .container-header{
+        width: 100%;
+    }
+    .container-header-button{
+        width: 100%;
+    }
+    .head-btn{
+        width: 200px;
+    }
+    .container-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer-right{
+        width: 200px;
+    }
+    .container-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .modal-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-modal-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-photo-modal{
+        width: 240px;
+    }
+    .container-form{
+        width: auto;
+        margin: 10px;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .input{
+        margin: 10px;
+        padding: 10px;
+    }
+    .form-content{
+        width: 290px;
+        margin: 10px;
+        padding: 15px;
+    }
+    .container-content{
+        width: 260px;
+    }
+    .container-content-image{
+        width: 200px;
+    }
+    .container-content-image-medium{
+        width: 200px;
+    }
+    .header-text{
+        font-size: 18px;
+    }
+    .container-content-right{
+        margin-top: 20px;
+    }
+    .header-button{
+        width: auto;
+    }
+    .admin-button{
+        width: auto;
+        border-radius: 0;
+        padding: 5px;
+    }
+    .products-row{
+        width: 290px;
+    }
+    .product-name{
+        width: 280px;
+    }
+    .content-cart-db{
+        width: 100%;
+    }
+    .content-cart{
+        width: 300px;
+    }
+    .message-profile{
+        width: 290px;
+    }
+}
