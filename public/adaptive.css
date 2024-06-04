@@ -69,7 +69,7 @@
         width: auto;
     }
 }
-@media(max-width: 398px) {
+@media(max-width: 500px) {
    .content-from-database{
         width: 300px;
    }
